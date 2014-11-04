@@ -1,0 +1,208 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="javascript" href="script.js">
+
+	<title>Halloween Hackathon</title>
+
+<script type="text/javascript" 
+src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+</script> 
+
+<script type="text/javascript">
+function getQuote() {
+	var quotes = new Array("Halloween, also known as All Hallows' Eve, can be traced back about 2,000 years to a pre-Christian Celtic festival held around Nov. 1 called Samhain (pronounced sah-win), which means summer's end in Gaelic. Have a TREAT!",
+
+"The tradition of dressing in costumes and trick-or-treating may go back to the practice of mumming and guising, in which people would disguise themselves and go door-to-door, asking for food.  Have a TREAT!",
+
+"In Great Britain, Jack-O-Lanterns are traditionally made from turnips.  Have a TREAT!",
+
+"Halloween is a $6 billion industry. Mad cheddah.  Have a TREAT!",
+
+"In Mexico on October 31 (or the early morning of November 1), there is a holiday called Day of the Dead. Have a TREAT!", 
+
+"Samhainophobia is the fear of Halloween.  Have a TREAT!",
+
+"Ireland is typically believed to be the birthplace of Halloween. Have a TREAT!",
+
+"Your age in jumping jacks!",
+
+"Pop-O-Pumpkin!!!",
+
+"Your age in pushups!",
+
+"Pop-O-Pumpkin!!!",
+
+"Your age in situps!",
+
+"Hold your breath for 30 seconds.",
+
+"Count to 100 really fast.",
+
+"Pop-O-Pumpkin!!!",
+
+"Sing Happy Birthday like an opera singer.",
+
+"Don't blink for 1 minute.",
+
+"Share your favourite part of Halloween.",
+
+"Pop-O-Pumpkin!!!",
+
+"Meow the tune Jingle Bells like a cat.",
+
+"Drink a tall glass of water.",
+
+"Pop-O-Pumpkin!!!",
+
+"What month is Halloween?",
+
+"Name 10 chocolate bars while someone repetitively taps your forehead.",
+
+"Challenge someone to a game of rock, paper, scissors; winner gets a TREAT!",
+
+"Pop-O-Pumpkin!!!",
+
+"Challenge someone to an arm wrestle; winner gets a TREAT!",
+
+"Challenge someone to a thumb war; winner gets a TREAT!",
+
+"Sing Happy Birthday in a made-up language.",
+
+"Pop-O-Pumpkin!!!",
+
+"Do jumping jacks for 1 minute.",
+
+"Touch your toes.",
+
+"Do a summersault.",
+
+"Successfully high five a friend in one try; you both get a TREAT!",
+
+"Run on the spot for 1 minute.",
+
+"Pop-O-Pumpkin!!!",
+
+"Hold your biggest smile for 1 minute.",
+
+"Name 4, 3 letter body parts.",
+
+"Make scary noises for 1 minute.",
+
+"Crawl around on your hands and knees for 1 minute.",
+
+"Spin in circles for 1 minute.",
+
+"Repeat please and thank you for 1 minute.",
+
+"Pop-O-Pumpkin!!!",
+
+"Finish the phrase: I feel happy when...",
+
+"Make an angry face for 1 minute.",
+
+"Make silly faces for 1 minute.",
+
+"Act out a pumpkin seed growing into a pumpkin.",
+
+"Pop-O-Pumpkin!!!",
+
+"Sing a song about Halloween to the tune of Happy Birthday.",
+
+"Remember to brush your teeth before bed. Have a TREAT!",
+
+"Pop-O-Pumpkin!!!",
+
+"Tell your friends and family what you like about them.  Have a TREAT!",
+
+"Stand still for 1 minute.  Don't blink.",
+
+"Pop-O-Pumpkin!!!",
+
+"Jump up and down for 1 minute.",
+
+"Pop-O-Pumpkin!!!",
+
+"Throw your hands in the air like you just don’t care for 1 minute.",
+
+"Pop-O-Pumpkin!!!",
+
+"Laugh like a haunted person for 1 minute.",
+
+"Fist bump a friend and say, ah yea.  You both get a TREAT!",
+
+"Pop-O-Pumpkin!!!",
+
+"Act like a cat for 1 minute.",
+
+"Pop-O-Pumpkin!!!",
+
+"Physical activity is important everyday.  Have a TREAT!",
+
+"Google UIT Startup Immersion.",
+
+"Pop-O-Pumpkin!!!",
+
+"Repeat Gavin Uhma for 1 minute.",
+
+"Pop-O-Pumpkin!!!",
+
+"Repeat She sells seashells by the sea shore for 1 minute.",
+
+"Balance on 1 foot for 30 seconds.",
+
+"Pop-O-Pumpkin!!!",
+
+"Cover your eyes for 1 minute.",
+
+"Pop-O-Pumpkin!!!",
+
+"Act like a zombie for 1 minute");
+var randomChoice = Math.floor(Math.random()* quotes.length)
+ $("#myBox").html(quotes[randomChoice]);
+ } 
+
+ function getTreat() {
+	var treats = new Array(
+		"2 treats per winner!",
+		"3 treats per winner!",
+		"4 treats per winner!");
+var randomChoice = Math.floor(Math.random()* treats.length)
+ $("#clickTreat").html(treats[randomChoice]);
+ } 
+</script>
+
+
+</head>
+
+<body>
+	<div id="intro"><center><b>TRICK</b>-and/or-<b>TREAT!</b></center></div>
+
+
+	<div id="sabrina">
+		<img src="sabrina.png">
+		<div id="spidy">
+		<img src="hallo3.jpg"></div>
+	</div>
+
+	<div id="myBox">
+Welcome my pretties...</div>
+
+	<p>
+     <a href="javascript:getQuote()">TRICK!</a>
+   </p>
+
+<div id="clickTreat">
+Have you earned your treat?
+</div>
+<div id="treat">
+     <a href="javascript:getTreat()">TREAT!</a>
+   </div>
+
+<div id="salem">
+<img src="trickotreat.jpg">
+</div>
+
+</body>
+
+</html>
